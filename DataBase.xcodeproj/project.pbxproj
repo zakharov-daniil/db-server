@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B356F032443595700276ED4 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 4B356F022443595700276ED4 /* Makefile */; };
+		4B356F0624435A5500276ED4 /* ZDV-207-generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B356F0424435A5500276ED4 /* ZDV-207-generator.cpp */; };
+		4B356F0824435B0800276ED4 /* ZDV-207-FullBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B356F0724435B0800276ED4 /* ZDV-207-FullBase.cpp */; };
+		4B356F0A24435D5900276ED4 /* ZDV-207-classbase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B356F0924435D5900276ED4 /* ZDV-207-classbase.cpp */; };
+		4B8FB0202451A17A0074AAC2 /* ZDV-207-server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FB01E2451A1790074AAC2 /* ZDV-207-server.cpp */; };
+		4B8FB04424520FBD0074AAC2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FB04324520FBD0074AAC2 /* main.cpp */; };
+		4B8FB04824520FC20074AAC2 /* ZDV-207-client-main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FB03B24520ECF0074AAC2 /* ZDV-207-client-main.cpp */; };
+		4B8FB04C245211620074AAC2 /* ZDV-207-client-main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FB04B245211620074AAC2 /* ZDV-207-client-main.cpp */; };
+		4BD5CC3B2403CB560079D73D /* ZDV-207-main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5CC3A2403CB560079D73D /* ZDV-207-main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B8FB03F24520FBD0074AAC2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4BD5CC352403CB560079D73D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4B356F022443595700276ED4 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
+		4B356F0424435A5500276ED4 /* ZDV-207-generator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ZDV-207-generator.cpp"; sourceTree = "<group>"; };
+		4B356F0724435B0800276ED4 /* ZDV-207-FullBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ZDV-207-FullBase.cpp"; sourceTree = "<group>"; };
+		4B356F0924435D5900276ED4 /* ZDV-207-classbase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ZDV-207-classbase.cpp"; sourceTree = "<group>"; };
+		4B4D098E242B731F0008E61B /* ZDV-207-classbase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZDV-207-classbase.h"; sourceTree = "<group>"; };
+		4B8A3FDF24044EC3000942BA /* output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output.txt; sourceTree = "<group>"; };
+		4B8A3FE024048D0C000942BA /* lecture.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lecture.txt; sourceTree = "<group>"; };
+		4B8A3FE124058DED000942BA /* date.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = date.txt; sourceTree = "<group>"; };
+		4B8FB01E2451A1790074AAC2 /* ZDV-207-server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ZDV-207-server.cpp"; sourceTree = "<group>"; };
+		4B8FB01F2451A1790074AAC2 /* ZDV-207-server.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "ZDV-207-server.hpp"; sourceTree = "<group>"; };
+		4B8FB0352451D0850074AAC2 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		4B8FB03B24520ECF0074AAC2 /* ZDV-207-client-main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ZDV-207-client-main.cpp"; sourceTree = "<group>"; };
+		4B8FB04124520FBD0074AAC2 /* client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = client; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B8FB04324520FBD0074AAC2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4B8FB049245210E00074AAC2 /* ZDV-207-client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZDV-207-client.h"; sourceTree = "<group>"; };
+		4B8FB04A245211620074AAC2 /* ZDV-207-client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZDV-207-client.h"; sourceTree = "<group>"; };
+		4B8FB04B245211620074AAC2 /* ZDV-207-client-main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ZDV-207-client-main.cpp"; sourceTree = "<group>"; };
+		4B8FB04D24521A420074AAC2 /* command.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = command.txt; sourceTree = "<group>"; };
+		4B8FB04E24521A480074AAC2 /* result.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = result.txt; sourceTree = "<group>"; };
+		4B9291E3242BD22B00A8F9FC /* ZDV-207-FullBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZDV-207-FullBase.h"; sourceTree = "<group>"; usesTabs = 1; };
+		4BD5CC372403CB560079D73D /* DataBase */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataBase; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD5CC3A2403CB560079D73D /* ZDV-207-main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ZDV-207-main.cpp"; sourceTree = "<group>"; };
+		4BD5CC422403CC910079D73D /* ZDV-207-generator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZDV-207-generator.h"; sourceTree = "<group>"; };
+		4BD5CC462403D35E0079D73D /* surname.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = surname.txt; sourceTree = "<group>"; };
+		4BD5CC48240445580079D73D /* name.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = name.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B8FB03E24520FBD0074AAC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD5CC342403CB560079D73D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B8FB04224520FBD0074AAC2 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				4B8FB04B245211620074AAC2 /* ZDV-207-client-main.cpp */,
+				4B8FB04A245211620074AAC2 /* ZDV-207-client.h */,
+				4B8FB04324520FBD0074AAC2 /* main.cpp */,
+				4B8FB04D24521A420074AAC2 /* command.txt */,
+				4B8FB04E24521A480074AAC2 /* result.txt */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		4BD5CC2E2403CB560079D73D = {
+			isa = PBXGroup;
+			children = (
+				4BD5CC392403CB560079D73D /* DataBase */,
+				4B8FB04224520FBD0074AAC2 /* client */,
+				4BD5CC382403CB560079D73D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BD5CC382403CB560079D73D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BD5CC372403CB560079D73D /* DataBase */,
+				4B8FB04124520FBD0074AAC2 /* client */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BD5CC392403CB560079D73D /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				4BD5CC3A2403CB560079D73D /* ZDV-207-main.cpp */,
+				4B356F0424435A5500276ED4 /* ZDV-207-generator.cpp */,
+				4BD5CC422403CC910079D73D /* ZDV-207-generator.h */,
+				4B356F0724435B0800276ED4 /* ZDV-207-FullBase.cpp */,
+				4B9291E3242BD22B00A8F9FC /* ZDV-207-FullBase.h */,
+				4B356F0924435D5900276ED4 /* ZDV-207-classbase.cpp */,
+				4B4D098E242B731F0008E61B /* ZDV-207-classbase.h */,
+				4B8FB01E2451A1790074AAC2 /* ZDV-207-server.cpp */,
+				4B8FB01F2451A1790074AAC2 /* ZDV-207-server.hpp */,
+				4B8A3FDF24044EC3000942BA /* output.txt */,
+				4BD5CC462403D35E0079D73D /* surname.txt */,
+				4BD5CC48240445580079D73D /* name.txt */,
+				4B8A3FE024048D0C000942BA /* lecture.txt */,
+				4B8A3FE124058DED000942BA /* date.txt */,
+				4B356F022443595700276ED4 /* Makefile */,
+				4B8FB0352451D0850074AAC2 /* index.html */,
+				4B8FB03B24520ECF0074AAC2 /* ZDV-207-client-main.cpp */,
+				4B8FB049245210E00074AAC2 /* ZDV-207-client.h */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B8FB04024520FBD0074AAC2 /* client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B8FB04524520FBD0074AAC2 /* Build configuration list for PBXNativeTarget "client" */;
+			buildPhases = (
+				4B8FB03D24520FBD0074AAC2 /* Sources */,
+				4B8FB03E24520FBD0074AAC2 /* Frameworks */,
+				4B8FB03F24520FBD0074AAC2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = client;
+			productName = client;
+			productReference = 4B8FB04124520FBD0074AAC2 /* client */;
+			productType = "com.apple.product-type.tool";
+		};
+		4BD5CC362403CB560079D73D /* DataBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BD5CC3E2403CB560079D73D /* Build configuration list for PBXNativeTarget "DataBase" */;
+			buildPhases = (
+				4BD5CC332403CB560079D73D /* Sources */,
+				4BD5CC342403CB560079D73D /* Frameworks */,
+				4BD5CC352403CB560079D73D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataBase;
+			productName = DataBase;
+			productReference = 4BD5CC372403CB560079D73D /* DataBase */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BD5CC2F2403CB560079D73D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Daniil Zakharov";
+				TargetAttributes = {
+					4B8FB04024520FBD0074AAC2 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					4BD5CC362403CB560079D73D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4BD5CC322403CB560079D73D /* Build configuration list for PBXProject "DataBase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BD5CC2E2403CB560079D73D;
+			productRefGroup = 4BD5CC382403CB560079D73D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BD5CC362403CB560079D73D /* DataBase */,
+				4B8FB04024520FBD0074AAC2 /* client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B8FB03D24520FBD0074AAC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B8FB04824520FC20074AAC2 /* ZDV-207-client-main.cpp in Sources */,
+				4B8FB04C245211620074AAC2 /* ZDV-207-client-main.cpp in Sources */,
+				4B8FB04424520FBD0074AAC2 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD5CC332403CB560079D73D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B356F032443595700276ED4 /* Makefile in Sources */,
+				4BD5CC3B2403CB560079D73D /* ZDV-207-main.cpp in Sources */,
+				4B356F0A24435D5900276ED4 /* ZDV-207-classbase.cpp in Sources */,
+				4B356F0824435B0800276ED4 /* ZDV-207-FullBase.cpp in Sources */,
+				4B8FB0202451A17A0074AAC2 /* ZDV-207-server.cpp in Sources */,
+				4B356F0624435A5500276ED4 /* ZDV-207-generator.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B8FB04624520FBD0074AAC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4B8FB04724520FBD0074AAC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4BD5CC3C2403CB560079D73D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4BD5CC3D2403CB560079D73D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4BD5CC3F2403CB560079D73D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4BD5CC402403CB560079D73D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B8FB04524520FBD0074AAC2 /* Build configuration list for PBXNativeTarget "client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B8FB04624520FBD0074AAC2 /* Debug */,
+				4B8FB04724520FBD0074AAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BD5CC322403CB560079D73D /* Build configuration list for PBXProject "DataBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD5CC3C2403CB560079D73D /* Debug */,
+				4BD5CC3D2403CB560079D73D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BD5CC3E2403CB560079D73D /* Build configuration list for PBXNativeTarget "DataBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD5CC3F2403CB560079D73D /* Debug */,
+				4BD5CC402403CB560079D73D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BD5CC2F2403CB560079D73D /* Project object */;
+}
