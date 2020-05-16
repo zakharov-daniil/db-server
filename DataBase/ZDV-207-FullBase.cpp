@@ -205,10 +205,16 @@ void base:: addrecord(char * com) {
     new_records[size].makerecord(com); // В последнюю запись -- добавить новую
     //new_records[size].printrecord();
     size++;
-    
     delete records;
     records = new_records;
-#warning TODO: file sync
+    
+    index idx(size); // нужно синхронизировать глобальный массив индексов
+    for (int i=0; i<size-1; i++) {
+        idx[i] = global[i];
+    }
+    idx[size-1] = size;
+    global = idx;
+
 }
 
 void base:: offrecord(char * com) {
@@ -248,6 +254,13 @@ void base:: offrecord(char * com) {
         
     }
     size--;
-#warning TODO: file sync
+    
+    index idx(size); // нужно синхронизировать глобальный массив индексов
+    for (int i=0; i<size-1; i++) {
+        idx[i] = global[i];
+    }
+    idx[size-1] = size;
+    global = idx;
+ 
     //renewindex(size);
 }

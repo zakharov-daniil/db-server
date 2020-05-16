@@ -59,6 +59,7 @@
 		4B8FB04B245211620074AAC2 /* ZDV-207-client-main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ZDV-207-client-main.cpp"; sourceTree = "<group>"; };
 		4B8FB04D24521A420074AAC2 /* command.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = command.txt; sourceTree = "<group>"; };
 		4B8FB04E24521A480074AAC2 /* result.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = result.txt; sourceTree = "<group>"; };
+		4B8FB05724697C6C0074AAC2 /* ZDV-207-EventLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZDV-207-EventLoop.h"; sourceTree = "<group>"; };
 		4B9291E3242BD22B00A8F9FC /* ZDV-207-FullBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZDV-207-FullBase.h"; sourceTree = "<group>"; usesTabs = 1; };
 		4BD5CC372403CB560079D73D /* DataBase */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataBase; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD5CC3A2403CB560079D73D /* ZDV-207-main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ZDV-207-main.cpp"; sourceTree = "<group>"; };
@@ -127,6 +128,7 @@
 				4B4D098E242B731F0008E61B /* ZDV-207-classbase.h */,
 				4B8FB01E2451A1790074AAC2 /* ZDV-207-server.cpp */,
 				4B8FB01F2451A1790074AAC2 /* ZDV-207-server.hpp */,
+				4B8FB05724697C6C0074AAC2 /* ZDV-207-EventLoop.h */,
 				4B8A3FDF24044EC3000942BA /* output.txt */,
 				4BD5CC462403D35E0079D73D /* surname.txt */,
 				4BD5CC48240445580079D73D /* name.txt */,

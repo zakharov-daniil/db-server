@@ -13,7 +13,7 @@
 #include "ZDV-207-classbase.h"
 #include "ZDV-207-FullBase.h"
 #include "ZDV-207-server.hpp"
-#include "EventLoop.h"
+#include "ZDV-207-EventLoop.h"
 
 int main() {
     
@@ -25,11 +25,11 @@ int main() {
     b.makebase(fout, size);
     fclose(fout);
     
-    EventLoop<conn_t> loop(4);
+    EventLoop<conn_t> loop(4); //будем делать 4 одновременных потока
     
-    loop.addHandler(createHandler<conn_t>([](conn_t c){
+    loop.addHandler(createHandler<conn_t>([](conn_t c){ //подключаем обработчик на запрос к БД
         process(c);
-    }), "connection");
+    }), "connection"); //собственно подсключения
     
     loop.start();
     init_server(3228); //Инициализируем сервер
