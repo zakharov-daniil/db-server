@@ -100,11 +100,10 @@ htmlElem elemFromRecord(const record & rec){
 
 
 void process (conn_t connection){
-    int is_file_requested = (strstr(connection.query, "select") != connection.query);
+    int is_file_requested = (strchr(connection.query, '.') != 0);
     //Эту часть кода мне помогли написать интернет и Дмитрий Маслюков
     //В этой части -- проверка, какой файл клиент запршавивает у сервера,
-    //для этапа 4 это и НЕ НУЖНО, но понадобится в будущем,
-    //когда сделаю интеграцию с множеством клиентов, и сайтом
+    
     if(is_file_requested){
         FILE * f = fopen(connection.query, "r");
         if(!f){
@@ -142,8 +141,12 @@ void process (conn_t connection){
         shutdown(connection.client_fd, SHUT_RDWR);
     } else {
         printf("%s", connection.query); //На всякий случай вывожу командную строку
+        
+        if (strstr(connection.query, "test/") == connection.query) {
+            base::index ind = b.selectall(connection.query+5);  //Собственно заданная командной строкой выборка
+            b.printall(connection.fclient, ind); //Печатаем результат в передаваемый клиенту файл (в сокете)
+        }else {
         base::index ind = b.selectall(connection.query);  //Собственно заданная командной строкой выборка
-        /*
         htmlElem root;
         for(int i = 0; i < ind.len; i++){
             htmlElem child = elemFromRecord(b.getindexrecord(i, ind));
@@ -155,8 +158,8 @@ void process (conn_t connection){
         fprintf(connection.fclient, "HTTP/1.1 200 OK\r\nConnection:close\r\nContent-type:text/html\r\nContent-length:%lu\r\n\r\n", render.size());
         
         fprintf(connection.fclient, "%s", render.c_str());
-        */
-        b.printall(connection.fclient, ind); //Печатаем результат в передаваемый клиенту файл (в сокете)
+        }
+        //b.printall(connection.fclient, ind); //Печатаем результат в передаваемый клиенту файл (в сокете)
         fclose(connection.fclient);     //Закрытие клиента
         shutdown(connection.client_fd, SHUT_RDWR);
         //b.printall();

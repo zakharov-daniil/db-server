@@ -28,10 +28,11 @@ int main() {
             char cmbuf [4096];
             char rdbuf [4096];
             int cmdno = 0;
-            while (fgets(cmbuf, 4095, fin)) {
+            while (fgets(cmbuf+5, 4095, fin)) {
+                memcpy(cmbuf,"test/",5);
                 cmbuf[strlen(cmbuf)-1]=0; //Уберём символ перехода строки, иначе плохо
                 fprintf(fout, "_________\n");
-                FILE * client = Client::request(cmbuf, "127.0.0.1", 3228); // Получаем ответ сервера
+                FILE * client = Client::request(cmbuf, "127.0.0.1", 3227); // Получаем ответ сервера
                 while (fgets(rdbuf, 4095, client)) {
                     fprintf(fout, "%s", rdbuf); //Печатаем ответ
                 }
