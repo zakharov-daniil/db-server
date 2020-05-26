@@ -1,0 +1,4 @@
+select%20date=%202002-2003%20subject=%20Топология
+select%20date=%202002-2003%20student=%20ВАРАХОБИН%20subject=%20Физика
+select%20date=%202015-2016%20student=%20РАДИЛОВ%20subject=%20Физика
+select%20date=%202003-2004%20student=%20ОБРАЗЦОВ%20subject=%20Топология%20lector=%20Остромир%20ОБАКУМОВ

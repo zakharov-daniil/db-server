@@ -1,0 +1,3 @@
+select%20date=%202002-2003%20subject=%20Анализ
+select%20date=%202002-2003%20student=%20ТИНЬКОВ%20subject=%20Топология
+select%20date=%202002-2003%20student=%20ЗАПЛАТОВ%20subject=%20Анализ%20date=%202005-2006

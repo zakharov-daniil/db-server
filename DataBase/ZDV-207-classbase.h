@@ -21,8 +21,10 @@ private:
     char *date;
     char *subject;
     char * students[10];
+    int length;
 public:
     record() {
+        length = 0;
         namelect = NULL;
         surnlect = NULL;
         date = NULL;
@@ -61,6 +63,9 @@ public:
     }
     char * getstudents(int i) const {
         return students[i];
+    }
+    int getLength() const {
+        return length;
     }
     
     void makerecord(char * w);

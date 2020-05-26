@@ -123,7 +123,7 @@ base::index base:: selectall (char * com ) {
         if (num == 11) {
             num--;
         }
-        readmux.try_lock();
+        readmux.try_lock(); //может быть 2 чтения одновременно
         writemux.lock();
         // ВЫБОР -- по каждому параметру
         index idx(global);
@@ -141,7 +141,7 @@ base::index base:: selectall (char * com ) {
                 idx = selectlector(q[i+1], q[i+2], idx);
             }
         }
-        readmux.unlock();
+        readmux.unlock(); //операция завершена, можно писать
         writemux.unlock();
         return idx;
     }

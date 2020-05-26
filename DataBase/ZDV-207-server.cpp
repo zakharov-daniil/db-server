@@ -10,6 +10,7 @@
 #include "ZDV-207-server.hpp"
 //#include "server.h"
 #include <string.h>
+#include "ZDV-207-htmlElement.h"
 base b;
 //static const char * okhdr = "HTTP/1.1 200 OK\r\nContent-length: %lu\r\nContent-Type: %s\r\nConnection: close\r\n\r\n";
 
@@ -41,8 +42,18 @@ conn_t get_client(void){
         if(*reader != '%'){
             *writer++ = *reader;
         } else {
+            char numbuf[3];
+            strncpy(numbuf, reader+1, 2);
+            long n = strtol(numbuf, 0, 16);
             reader += 2;
-            *writer++ = ' ';
+            switch(n){
+                case 0x20:
+                    *writer++ = ' ';
+                    break;
+                    default:
+                    *writer ++ = (char)n;
+                
+            }
         }
     }
     *writer = 0;
@@ -55,6 +66,38 @@ static void not_found(conn_t connection){ //Если что-то не срабо
     fclose(connection.fclient);
     shutdown(connection.client_fd, SHUT_RDWR);
 }
+
+htmlElem elemFromRecord(const record & rec){
+    htmlElem root;
+    
+    htmlElem subject;
+    htmlElem date;
+    htmlElem lector;
+    htmlElem students;
+    
+    subject.textContent = rec.getsubject();
+    date.textContent = rec.getdate();
+    lector.textContent = "Lector: ";
+    lector.textContent += rec.getnamelect();
+    lector.textContent += " ";
+    lector.textContent += rec.getsurnlect();
+    students.textContent = "Students: ";
+    if (rec.getLength()) {
+        for (int i=0; i <= rec.getLength()-1; i++) {
+            students.textContent += rec.getstudents(i);
+            students.textContent += " ";
+        }
+        
+    }
+    
+    root.children.push_back(subject);
+    root.children.push_back(date);
+    root.children.push_back(lector);
+    root.children.push_back(students);
+    
+    return root;
+}
+
 
 void process (conn_t connection){
     int is_file_requested = (strstr(connection.query, "select") != connection.query);
@@ -99,8 +142,21 @@ void process (conn_t connection){
         shutdown(connection.client_fd, SHUT_RDWR);
     } else {
         printf("%s", connection.query); //На всякий случай вывожу командную строку
-        base::index i = b.selectall(connection.query);  //Собственно заданная командной строкой выборка
-        b.printall(connection.fclient, i); //Печатаем результат в передаваемый клиенту файл (в сокете)
+        base::index ind = b.selectall(connection.query);  //Собственно заданная командной строкой выборка
+        /*
+        htmlElem root;
+        for(int i = 0; i < ind.len; i++){
+            htmlElem child = elemFromRecord(b.getindexrecord(i, ind));
+            child.style["padding"] = "0.5rem";
+            root.children.push_back(child);
+        }
+        std::string render = "<html><head><meta charset=\"utf-8\"></head><body>"+root.render()+"</body></html>";
+        
+        fprintf(connection.fclient, "HTTP/1.1 200 OK\r\nConnection:close\r\nContent-type:text/html\r\nContent-length:%lu\r\n\r\n", render.size());
+        
+        fprintf(connection.fclient, "%s", render.c_str());
+        */
+        b.printall(connection.fclient, ind); //Печатаем результат в передаваемый клиенту файл (в сокете)
         fclose(connection.fclient);     //Закрытие клиента
         shutdown(connection.client_fd, SHUT_RDWR);
         //b.printall();

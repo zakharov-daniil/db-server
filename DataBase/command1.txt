@@ -1,0 +1,3 @@
+select%20date=%202002-2003%20subject=%20Топология
+select%20date=%202002-2003%20student=%20ТИНЬКОВ%20subject=%20Топология%20lector=%20Адам%20РАДИК
+select%20date=%202002-2003%20student=%20ЗАПЛАТОВ%20subject=%20Анализ

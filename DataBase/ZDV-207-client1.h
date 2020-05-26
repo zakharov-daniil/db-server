@@ -14,10 +14,7 @@
 #include<unistd.h>
 #include <netinet/in.h>
 class Client{
-    
-//Под копирку из файла cli_tcp.cpp
-//Вплоть до интеграции с http-протоколами
-//В будущем, видимо, сделаю ещё один .cpp файл для большей технологической правильности
+
 public:
     static FILE * request(const char * command, const char * hostname, int portno){
             int err;
@@ -52,8 +49,8 @@ public:
                 perror ("Client:  connect failure");
                 exit (EXIT_FAILURE);
             }
-            fprintf (stdout,"Connection is ready\n");
-        //конструируем http-строку для отправляемого запроса
+            //fprintf (stdout,"Connection is ready\n");
+            
         FILE * client = fdopen(sock, "r+");
         fprintf(client, "GET /%s HTTP/1.1\r\nHost: %s\r\nAccept: text/html\r\nConnection: close\r\n\r\n",command, hostname );
         fflush(client);

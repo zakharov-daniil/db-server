@@ -31,6 +31,7 @@ void record:: makerecord(char * w) {
     subject = q[3];
     date = q[5];
     if (num > 6) {
+        length = num-7+1;
         //students = (char**)malloc((num)*sizeof(char*));
         for (i=7; i<=num; i++) {
             students[i-7] = (char *)malloc(40);
